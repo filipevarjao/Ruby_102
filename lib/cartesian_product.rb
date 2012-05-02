@@ -9,7 +9,6 @@ class CartesianProduct
         @result.push([l, r])
       end
     end
-
   end
 
   def each
