@@ -13,9 +13,7 @@ class Numeric
   end
 
   def in(currency)
-    raise 'Param should be a symbol' unless currency.is_a? Symbol
-    singular_currency = currency.to_s.gsub( /s$/, '')
-    self / @@currencies[singular_currency]
+    self / @@currencies[ currency.to_s.gsub( /s$/, '') ]
   end
 
 end
